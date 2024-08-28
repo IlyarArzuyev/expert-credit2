@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Наша компания занимается не только консультацией, но и полным сопровождением с подготовкой к ипотеке. Привлечение брокера позволяет оформить кредит на более выгодных условиях. Несмотря на рекламные акции и лояльность, многие банки неохотно кредитуют некоторые категории заемщиков (ИП, самозанятых или фрилансеров), поскольку считают их рисковыми клиентами. Именно в этих случаях брокер поможет получить кредит на покупку жилья. По статистике, до 95 % заявок, направленных брокерскими компаниями, получают одобрение.">
+    <meta name="keywords" content="без первоначального взноса, без ПВ, ипотека без дохода, ипотека с просрочками, сопровождение по ипотеке, ипотека по низкой ставке, ипотека без подтверждения дохода">
+    <meta property="og:title" content="Expert Credit">
+    <meta property="og:description" content="Наша команда состоит из бывших сотрудников банка, средний опыт которых составляет 7 лет. Мы уже выдали ипотеку более 10,000 клиентам. Благодаря нашему опыту и знаниям вы можете избежать риска получить отказ от Банка или оформить дорогой займ.">
+    <meta property="og:image" content="images/large-features-2-570x368.png">
+    <meta property="og:url" content="https://expert-credit.kz">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Expert Credit">
+    <title>Expert Credit</title>
+    <link rel="icon" href="images/black digital square.jpg" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,700,800%7COswald:300,400,500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+ <style>
+
+   body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+           
+            margin: 0;
+           
+            color: #333;
+        }
+        h1 {
+            font-size: 24px;
+            color: #444;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        p.subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .divider {
+            width: 50px;
+            height: 3px;
+            background-color: #007bff;
+            margin: 10px auto;
+        }
+        .bank-offers {
+            display: flex;
+            flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+            justify-content: center; /* Выравнивает элементы по центру */
+            gap: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .bank-offer {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 15px; /* Уменьшено для мобильных устройств */
+            width: 100%; /* Полная ширина на мобильных устройствах */
+            max-width: 220px; /* Ограничение ширины */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .bank-offer:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-3px);
+        }
+        .bank-logo {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .bank-details p {
+            margin: 8px 0;
+            font-size: 14px; /* Уменьшен размер шрифта для мобильных устройств */
+            line-height: 1.4;
+            color: #555;
+        }
+        .calculate-button {
+            margin-top: auto;
+            padding: 10px 0; /* Уменьшены отступы для мобильных устройств */
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px; /* Уменьшен размер шрифта для мобильных устройств */
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .calculate-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Медиа-запросы для мобильных устройств */
+        @media (max-width: 768px) {
+            .bank-offer {
+                width: calc(50% - 20px); /* Ширина 50% с учетом отступов */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bank-offer {
+                width: calc(100% - 20px); /* Полная ширина с учетом отступов */
+            }
+        }
+
+        .calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .output-group {
+            margin-top: 20px;
+        }
+
+        .output-group div {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+           <!-- Page Header-->
+      <header class="section page-header" data-type="anchor">
+        <!-- RD Navbar-->
+ <!-- Javascript-->
+    <script src="js/jquery.min.js"></script>
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-fixed" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="#home"><img src="images/logo-default-480x80.png" width="240" height="40" alt="Лого Expert Credit"></a>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Главная</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Преимущества</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#about-us">О нас</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#testimonials">Руководство</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#blog">Сопровождение</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#contact">Контакты</a>
+                      </li>
+              &nbsp;  <a href="kzsite.html"><img src="Kaz.png" width="50" 
+  height="50" alt="Expert Credit site lang"></a>
+              
+</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="swiper-container swiper-slider swiper-slider-minimal" id="home" data-loop="true" data-slide-effect="fade" data-autoplay="3500" data-simulate-touch="true">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-slide-bg="images/slider-minimal-slide-1-1920x888.jpg">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="swiper-slide-text">
+                  <div class="text-large">Добро пожаловать</div>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg="images/slider-minimal-slide-2-1920x888.jpg">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="swiper-slide-text">
+                  <div class="text-large">Не переплачивай</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg="images/slider-minimal-slide-3-1920x888.jpg">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="swiper-slide-text">
+                  <div class="text-large">Выбирай лучшего брокера</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination-outer container">
+          <div class="swiper-pagination swiper-pagination-modern swiper-pagination-marked" data-index-bullet="true"></div>
+        </div>
+      </div>
+      <!-- Our Services-->
+     <section class="section section-lg text-center" id="services" data-type="anchor">
+        <div class="container">
+          <h3 class="wow-outer"><span class="wow slideInDown">Наши преимущества</span></h3>
+<p class="wow-outer"><span class="text-width-1 wow slideInDown">Конкурентные преимущества компании – это особенности, которые выделяют нашу компанию в глазах потенциальных клиентов.</span></p>
+          <div class="row row-50">
+            <div class="col-md-6 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft"><img src="images/2.jpg" alt="оформление ипотеки" width="571" height="353"/>
+                <h4 class="post-modern-title">Почему выбирают нас?</h4>
+                <ul class="post-modern-meta">
+                
+                  <li>
+                  
+                <p>Мы занимаемся консультацией по оформлению ипотеки, мы на рынке более 2 лет. Наши эксперты имеют опыт в сфере оформления ипотеки более 7 лет. Мы эксперты высокого класса и знаем об ипотеке практически все. Более 10000клиентов получили ипотеку с помощью нас.</p></li>
+              </article>
+            </div>
+            <div class="col-md-6 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft"><img src="images/1.jpg" alt="как получить ипотеку" width="571" height="353"/></a>
+                <h4 class="post-modern-title">5 шагов к заветной цели</h4>
+                <ul class="post-modern-meta">
+                   <li>
+                <p>Наша компания занимается не только консультацией, но и полным сопровождением с подготовкой к ипотеке. Ведь покупка жилья — это очень важный шаг и необходимо отнестись к нему ответственно. Более того на рынке существуют более 23 ипотечных программ, которые отличаются между собой, как ставками кредитования, при этом есть возможность получения ипотеки как с ПВ, так и без ПВ, с подтверждением дохода так и без подтверждения дохода</p>
+              </li>
+</ul>
+               </article>
+            </div>
+          </div>
+        </ul>
+      </section>
+
+
+ 
+
+      <!-- A Few Words About Us-->
+      <section class="section section-lg bg-gray-100" id="about-us" data-type="anchor">
+        <div class="container">
+          <div class="row row-50 justify-content-center justify-content-lg-between">
+            <div class="col-md-10 col-lg-6 col-xl-5">
+
+ 
+
+              <h3 class="wow-outer"><span class="wow slideInDown">Немного о нас</span></h3>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".05s">Мы - компания <strong>Expert Credit.</strong></span></p>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">Наша команда состоит из бывших сотрудников банка, средний опыт которых составляет 7 лет. Мы уже выдали ипотеку более 10,000 клиентам. Благодаря нашему опыту и знаниям вы можете избежать риска получить отказ от Банка или оформить дорогой займ.</span></p>
+              <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" data-wow-delay=".1s" href="tel:+77753181260">Позвонить нам</a></div>
+<div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" data-wow-delay=".1s" href="https://wa.me/77753181260" target="_blank" rel="noopener noreferrer">Написать нам</a>
+</div>
+           </div>
+            <div class="col-md-10 col-lg-6 wow-outer"><img class="img-responsive wow slideInRight" src="images/large-features-2-570x368.png" alt="скидка на консультацию" width="270px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="button button-primary button-winona" href="https://www.instagram.com/kanat_expert/" target="_blank" rel="noopener noreferrer">instagram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Thin-->
+      <section class="section section-xs bg-primary-gradient text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-12">
+              <div class="box-cta-thin">
+                <h4 class="wow-outer"><span class="wow slideInRight">Не откладывай вопрос по ипотеке! <span class="font-weight-bold">Действуй сейчас! </span>Запишись на консультацию!</span></h4><a class="button button-primary button-winona" href="https://wa.me/77753181260" target="_blank" rel="noopener noreferrer">Записаться на консультацию</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <!-- Testimonials-->
+      <section class="section section-lg bg-gray-100" id="testimonials" data-type="anchor">
+        <div class="container">
+          <h3 class="text-center">Мастер класс от руководителя компании </h3>
+          <div class="row row-50 justify-content-center justify-content-lg-between">
+            <div class="col-md-10 col-lg-5">
+              <div class="owl-carousel" data-items="1" data-dots="true" data-nav="false" data-loop="true" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
+                <div class="wow-outer">
+                  <blockquote class="quote-modern wow slideInLeft">
+                    <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
+                      <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
+                    </svg>
+                    <div class="quote-modern-text">
+                      <p>Привлечение брокера позволяет оформить кредит на более выгодных условиях (это объясняется тем, что многие компании тесно сотрудничают с банками). Несмотря на рекламные акции и лояльность, многие банки неохотно кредитуют некоторые категории заемщиков (ИП, самозанятых или фрилансеров), поскольку считают их рисковыми клиентами. Именно в этих случаях брокер поможет получить кредит на покупку жилья. По статистике, до 95 % заявок, направленных брокерскими компаниями, получают одобрение.</p>
+                    </div>
+                    <div class="quote-modern-meta">
+                      <div class="quote-modern-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
+                      </div>
+                      <div class="quote-modern-info">
+                        <cite class="quote-modern-cite">Канат Бершинбаев</cite>
+                        <p class="quote-modern-caption">Руководитель</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                 
+<div class="wow-outer">
+                  <blockquote class="quote-modern wow slideInLeft">
+                    <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
+                      <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
+                    </svg>
+                    <div class="quote-modern-text">
+                      <p>Снижение ставки по ипотеке – опять же благодаря тесному сотрудничеству с банком это возможно. В этом случае снижение ставки даже на 1 % обернется в будущем экономией на сотни тысяч тенге.</p>
+                    </div>
+                    <div class="quote-modern-meta">
+                      <div class="quote-modern-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
+                      </div>
+                      <div class="quote-modern-info">
+                        <cite class="quote-modern-cite">Канат Имангалиулы</cite>
+                        <p class="quote-modern-caption">Зам руководителя</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <div class="wow-outer">
+                  <blockquote class="quote-modern wow slideInLeft">
+                    <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
+                      <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
+                    </svg>
+                    <div class="quote-modern-text">
+                      <p>Просрочки по ипотечному кредиту обычно оборачиваются реализацией залогового имущества. В случае привлечения брокера удается качественно урегулировать этот вопрос в досудебном порядке (отсрочка платежей, либо рефинансирование в другом банке).</p>
+                    </div>
+                    <div class="quote-modern-meta">
+                      <div class="quote-modern-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
+                      </div>
+                      <div class="quote-modern-info">
+                        <cite class="quote-modern-cite">Абзал Асетулы</cite>
+                        <p class="quote-modern-caption">Аналитик</p>
+                      </div>
+                    </div>
+                  </blockquote>
+
+
+
+                </div> 
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 wow-outer">
+              <div class="thumbnail-video-1 bg-gray-700 wow slideInLeft">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/AyUpzjtdoRc?si=B_MStvHkeyiUdnHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing-->
+     
+       
+
+   
+     
+      <!-- Latest Blog Posts-->
+      <section class="section section-lg text-center" id="blog" data-type="anchor">
+        <div class="container">
+          <h3 class="wow-outer"><span class="wow slideInDown">Онлайн-калькулятор </span></h3>
+
+          <div class="row row-50">
+            <div class="col-md-6 wow-outer">
+              <!-- Post Modern-->
+             
+                  <h4 class="post-modern-title" align="center">Предложения от банков</h4>
+          
+<div class="divider"></div>
+<br>
+
+<div class="bank-offers">
+    <div class="bank-offer">
+        <img src="logo1.png" alt="Bank 1 Logo" class="bank-logo">
+        <div class="bank-details">
+            <p>Ставка: от 1%</p>
+            <p>Срок: до 72 мес.</p>
+            <p>Сумма: до 7 000 000 ₸</p>
+        </div>
+       
+    </div>
+
+    <div class="bank-offer">
+        <img src="logo2.jpeg" alt="Bank 2 Logo" class="bank-logo">
+        <div class="bank-details">
+            <p>Ставка: от 2%</p>
+            <p>Срок: до 60 мес.</p>
+            <p>Сумма: до 5 000 000 ₸</p>
+        </div>
+        
+    </div>
+
+    <div class="bank-offer">
+        <img src="logo3.png" alt="Bank 3 Logo" class="bank-logo">
+        <div class="bank-details">
+            <p>Ставка: от 3%</p>
+            <p>Срок: до 84 мес.</p>
+            <p>Сумма: до 10 000 000 ₸</p>
+        </div>
+      
+    </div>
+
+    <div class="bank-offer">
+        <img src="logo4.png" alt="Bank 4 Logo" class="bank-logo">
+        <div class="bank-details">
+            <p>Ставка: от 1.5%</p>
+            <p>Срок: до 48 мес.</p>
+            <p>Сумма: до 6 000 000 ₸</p>
+        </div>
+       
+    </div>
+</div>  
+<br>
+
+                
+                <ul class="post-modern-meta">
+              </article>
+            </div>
+            <div class="col-md-6 wow-outer">
+              <!-- Post Modern-->
+ <h4 class="post-modern-title" align="center">Калькулятор</h4>
+          
+<div class="divider"></div>
+<br>
+              <div class="calculator">
+    <label>
+        Сумма кредита:
+        <input type="number" id="loanAmount" placeholder="Введите сумму кредита">
+    </label>
+    <label>
+        Процентная ставка (% годовых):
+        <input type="number" id="interestRate" placeholder="Введите процентную ставку">
+    </label>
+    <label>
+        Срок кредита (лет):
+        <input type="number" id="loanTerm" placeholder="Введите срок кредита">
+    </label>
+    <button onclick="calculate()">Рассчитать</button>
+
+    <div class="output-group">
+        <div id="monthlyPayment"></div>
+        <div id="totalInterest"></div>
+        <div id="totalPayment"></div>
+    </div>
+</div>
+
+
+<script>
+    function calculate() {
+        const loanAmount = parseFloat(document.getElementById("loanAmount").value);
+        const interestRate = parseFloat(document.getElementById("interestRate").value) / 100 / 12;
+        const loanTerm = parseFloat(document.getElementById("loanTerm").value) * 12;
+
+        const monthlyPayment = (loanAmount * interestRate) / (1 - Math.pow(1 + interestRate, -loanTerm));
+        const totalPayment = monthlyPayment * loanTerm;
+        const totalInterest = totalPayment - loanAmount;
+
+        document.getElementById("monthlyPayment").textContent = `Ежемесячный платеж: ${monthlyPayment.toFixed(2)} ₸`;
+        document.getElementById("totalInterest").textContent = `Сумма переплат: ${totalInterest.toFixed(2)} ₸`;
+        document.getElementById("totalPayment").textContent = `Общая сумма: ${totalPayment.toFixed(2)} ₸`;
+    }
+</script>
+
+      </section>
+      <!-- Contact Us-->
+     
+      <!-- Fullwidth Gallery -->
+     
+           <!-- Page Footer-->
+      <footer class="section footer-linked bg-gray-700">
+<div id="contact">
+        <div class="footer-linked-main">
+          <div class="container">
+            <div class="row row-50">
+              <div class="col-lg-8">
+                <h4>Мы в соц.сетях</h4>
+                <hr class="offset-right-1">
+                <div class="row row-20">
+                  <div class="col-6 col-sm-3">
+                    <ul class="list list-xs">
+                      <li><a href="https://wa.me/77753181260" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"> Whatsapp</i></a></li>
+                   
+
+ </ul>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <ul class="list list-xs">
+                      <li><a href="https://t.me/ipotekamen" target="_blank" rel="noopener noreferrer"><i class="fa fa-telegram"> Telegram</a></i> </li>
+                     
+                    </ul>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <ul class="list list-xs">
+                     <li> <a href="https://www.instagram.com/kanat_expert/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"> Instagram</i></a></li>
+                     
+                    </ul>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <ul class="list list-xs">
+                      <li><a href="https://www.youtube.com/@kanat_expert" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"> Youtube</i></a></li>
+                     
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-4">
+                <h4>Контактная информация</h4>
+                <hr>
+                <ul class="list-sm">
+                  <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="https://go.2gis.com/y727r" target="_blank" rel="noopener noreferrer">г.Алматы, ул Сатпаева 103/1 <br> БЦ Улжан 5 этаж</a></li>
+                  <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span>
+                    <ul class="list-0">
+                      <li><a class="link-default" href="tel:+77753181260">+77753181260</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#" target="_blank" rel="noopener noreferrer">info@expert-credit.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-linked-aside">
+          <div class="container">
+            <!-- Rights-->
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved</span></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="preloader"> 
+      <div class="preloader-logo"><img src="images/logo-default-480x80.png" width="240" height="40" alt="Expert Credit Logo"></div>
+      <div class="preloader-body">
+        <div id="loadingProgressG">
+          <div class="loadingProgressG" id="loadingProgressG_1"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- coded by ragnar-->
+  </body>
+</html>
